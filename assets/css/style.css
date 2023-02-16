@@ -1,0 +1,523 @@
+/* Variables */
+:root {
+ --main-color: #AFAFAF;
+ --grey: #D8D5C5;
+ --error: #dc3545;
+ --success: #28a745;
+}
+
+/*Général*/
+body {
+    font-family: 'Lato',sans-serif;
+    margin: 0;
+    position: relative;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
+h2 {
+    font-size: 25px;
+}
+a  {
+    color: inherit;
+    text-decoration: none;
+}
+main {
+    min-height: calc(100vh - 190px);
+    padding: 30px;
+}
+textarea {
+    font-family: 'Arial', sans-serif;
+}
+.form label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.wrap-center {
+    min-height: calc(100vh - 190px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.no-result {
+    background: var(--error);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.msg-error {
+    background: var(--error);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.msg-success {
+    background: var(--success);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.btn {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.title-page {
+    margin-top:0;
+}
+.btn.edit, .btn.valid {
+    background-color: #c8f4d5;
+}
+.btn.delete, .btn.cancel {
+    background-color: #ffcbbd;
+}
+.btn.info {
+    background-color: #bdf1ff;
+}
+.label-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+.form input , .form select, .form textarea {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+}
+.form input:active, .form select:active {
+    outline-color: var(--main-color);
+}
+/*Header*/
+nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #B7B7B7;
+    height: 100vh;
+    top: 0;
+    width: 300px;
+    font-size: 24px;
+}
+nav.show {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 200;
+}
+nav > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav ul ul {
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--grey);
+    max-height: 80px;
+    height: 40px;
+}
+.title-project {
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-logout {
+    display: flex;
+    align-items: center;
+}
+.btn-logout span {
+    margin-left: 10px;
+}
+.btn-logout img {
+    max-width: 20px;
+}
+.elemt-right, .elemt-left {
+    width: 200px;
+}
+.close-menu {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding-left: 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 5%;
+}
+footer button {
+    border: none;
+    padding:0;
+    background: transparent;
+    cursor: pointer;
+}
+footer button img {
+    max-width: 20px;
+    margin: 0 5px;
+}
+
+/* Formulaire */
+
+.form-connect {
+    width: 300px;
+    margin:0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:var(--grey);
+}
+.form-connect .btn {
+    width: 100%;
+}
+.wrap-form {
+    padding: 20px;
+}
+.form-connect .title {
+    background-color: var(--main-color);
+    font-size: 12px;
+    padding: 13px;
+}
+.form-connect .title h1 {
+    margin: 0;
+}
+.form-connect .login {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-connect .signin {
+    text-align: right;
+    margin-bottom: 10px;
+    display: block;
+    /* color: var(--main-color); */
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+/* Listing */
+.list {
+    max-width: 1250px;
+    margin:0 auto;
+}
+.list .item {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grey);
+}
+.list .item h2 {
+    margin:0;
+}
+.list .item .txt {
+    margin: 10px 14px;
+}
+.list .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.list .actions a , .list .actions button {
+    margin: 5px;
+    display: block;
+    width: 100px;
+    cursor: pointer;
+}
+.list .btns {
+    display: flex;
+    justify-content: flex-end;
+}
+.list .btns .btn {
+    margin: 10px;
+}
+.retour-list {
+    display: inline-block;
+    margin-top: 20px;
+}
+.form-recette {
+    background-color: var(--grey);
+    padding: 30px;
+    border-radius: 20px;
+}
+.form-recette .btns{
+    margin: 0 -8px;
+    margin-top: 35px;
+}
+.form-recette .btns .btn{
+    margin: 8px;
+}
+.half-form {
+    display: flex;
+    margin: 0 -10px;
+}
+.half-form > * {
+   flex: 50%;
+   padding: 0 10px;
+}
+/* Liste de course */
+.wrapper {
+    max-width: 1250px;
+    margin:0 auto;
+}
+/* Gestion users */
+.form-users {
+    width: 700px;
+    margin:0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color:var(--grey);
+}
+.form-users .btn {
+    width: 100%;
+}
+.form-users .name {
+    font-size: 20px;
+}
+.form-users .title {
+    background-color: var(--main-color);
+    font-size: 12px;
+    padding: 13px;
+}
+.form-users .title h1 {
+    margin: 0;
+}
+.form-users label {
+    margin:0;
+}
+.form-users .rights {
+    display: flex;
+    align-items: center;
+}
+.form-users .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+/* Switch */
+.form .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 10px;
+  }
+  /* Hide default HTML checkbox */
+.form .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* The slider */
+.form .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+.switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+.switch .slider.round {
+    border-radius: 34px;
+  }
+.switch .slider.round:before {
+    border-radius: 50%;
+}
+.profil-logout {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+#msg {
+    margin: 10px 0;
+    text-align: center;
+}
+.its_me {
+    opacity: 0.2;
+}
+/* Ingrédients */
+.ingredients-inputs {
+    display: flex;
+    width: 100%;
+}
+.ingredients-inputs {
+    flex: 100%;
+    /* flex-wrap: wrap; */
+}
+#name_ingred {
+    flex: auto;
+    min-width: 240px;
+}
+.autocomplete {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.autocomplete input {
+    margin: 0 5px;
+    width: 85px;
+}
+.autocomplete button {
+    width: 174px;
+    margin-left: 10px;
+}
+#add_ingredient {
+    margin-top: 15px;
+}
+.item-ingredient  {
+    margin: 5px 0px;
+}
+#list-ingredients label {
+    display: flex;
+    align-items: center;
+}
+#list-ingredients label input {
+    position: absolute;
+    opacity: 0;
+}
+#list-ingredients label input:not(:checked) + span {
+    text-decoration: line-through;
+}
+.delete_ingredient {
+    margin-left: 20px;
+}
+
+  /* Responsive Mobile */
+@media (max-width: 576px) {
+    /* Header */
+    .btn-logout span {
+        display: none;
+    }
+    .elemt-right, .elemt-left {
+        width: auto;
+    }
+    nav {
+        width: 100%;
+    }
+    nav li {
+        text-align: center;
+    }
+    nav li a {
+        display: block;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .list .item {
+        flex-direction: column;
+        padding: 7px;
+    }
+    .list .item h2 {
+        text-align: center;
+    }
+    main {
+        padding: 10px;
+        min-height: calc(100vh - 150px);
+    }
+    .list .btns {
+        flex-direction: column;
+        margin-bottom: 3px;
+    }
+    .list .actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .list .item .txt {
+        margin: 4px;
+    }
+    .list .btns .btn {
+        margin: 4px;
+    }
+    .fav_receipt {
+        display: flex;
+        align-items: center;
+    }
+    .fav_receipt button {
+        margin: 2px;
+    }
+    .form-users {
+        width: auto;
+    }
+    header {
+        position: relative;
+        z-index: 10;
+    }
+    .half-form > * {
+        flex: 100%;
+    }
+    .half-form {
+        flex-wrap: wrap;
+    }
+    .form-recette .autocomplete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-recette .autocomplete input {
+        width: 100%;
+    }
+    .form-recette .autocomplete button {
+        margin-left:0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .ingredients-inputs {
+        flex-wrap: wrap;
+    }
+    #unit_ingred {
+        margin: 5px 0;
+        width: 100%;
+    }
+}

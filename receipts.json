@@ -1,0 +1,44 @@
+{
+    "receipts": [
+      {
+        "id": 1,
+        "titre": "Oeufs aux plats",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices. Curabitur accumsan arcu augue, a posuere ligula gravida non. Aenean ornare ullamcorper tellus vitae consectetur. Fusce rutrum ex sit amet ipsum luctus imperdiet. Phasellus sodales augue vitae leo gravida, id volutpat ligula dignissim. Suspendisse pulvinar erat sed augue lobortis tincidunt. Vestibulum vulputate tortor aliquam leo pulvinar, ac ultrices mauris pharetra. Praesent ullamcorper pharetra turpis, id fermentum ligula auctor sit amet. Nullam massa nunc, porttitor venenatis sodales vel, cursus et ligula.",
+        "temps": 10,
+        "ingredients": "",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices.",
+        "is_public": 1,
+        "id_owner": 1
+      },
+      {
+        "id": 2,
+        "titre": "Pâtes bolognaises",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices. Curabitur accumsan arcu augue, a posuere ligula gravida non. Aenean ornare ullamcorper tellus vitae consectetur. Fusce rutrum ex sit amet ipsum luctus imperdiet. Phasellus sodales augue vitae leo gravida, id volutpat ligula dignissim. Suspendisse pulvinar erat sed augue lobortis tincidunt. Vestibulum vulputate tortor aliquam leo pulvinar, ac ultrices mauris pharetra. Praesent ullamcorper pharetra turpis, id fermentum ligula auctor sit amet. Nullam massa nunc, porttitor venenatis sodales vel, cursus et ligula.",
+        "temps": 5,
+        "ingredients": "",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices.",
+        "is_public": 1,
+        "id_owner": 1
+      },
+      {
+        "id": 3,
+        "titre": "Hachi parmentier",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices. Curabitur accumsan arcu augue, a posuere ligula gravida non. Aenean ornare ullamcorper tellus vitae consectetur. Fusce rutrum ex sit amet ipsum luctus imperdiet. Phasellus sodales augue vitae leo gravida, id volutpat ligula dignissim. Suspendisse pulvinar erat sed augue lobortis tincidunt. Vestibulum vulputate tortor aliquam leo pulvinar, ac ultrices mauris pharetra. Praesent ullamcorper pharetra turpis, id fermentum ligula auctor sit amet. Nullam massa nunc, porttitor venenatis sodales vel, cursus et ligula.",
+        "temps": 10,
+        "ingredients": "",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices.",
+        "is_public": 1,
+        "id_owner": 1
+      },
+      {
+        "id": 4,
+        "titre": "Tarte à la tomate",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices. Curabitur accumsan arcu augue, a posuere ligula gravida non. Aenean ornare ullamcorper tellus vitae consectetur. Fusce rutrum ex sit amet ipsum luctus imperdiet. Phasellus sodales augue vitae leo gravida, id volutpat ligula dignissim. Suspendisse pulvinar erat sed augue lobortis tincidunt. Vestibulum vulputate tortor aliquam leo pulvinar, ac ultrices mauris pharetra. Praesent ullamcorper pharetra turpis, id fermentum ligula auctor sit amet. Nullam massa nunc, porttitor venenatis sodales vel, cursus et ligula.",
+        "temps": 10,
+        "ingredients": "",
+        "resume": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet massa massa. Fusce dictum risus et auctor ultrices.",
+        "is_public": 0,
+        "id_owner": 1
+      }
+    ]
+  }
